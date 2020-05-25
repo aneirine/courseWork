@@ -1,22 +1,16 @@
-package com.company.general;
+package com.company.panels;
 
 import javax.swing.*;
-import java.awt.*;
 
-public class ControlsPanel extends JPanel {
+public class ButtonsPanel extends JPanel {
 
     private int panelWidth;
 
     private int panelHeight;
 
-    public ControlsPanel(int panelWidth, int panelHeight) {
+    public ButtonsPanel(int panelWidth, int panelHeight) {
         this.panelWidth = panelWidth;
         this.panelHeight = panelHeight;
-    }
-
-    @Override
-    public Dimension getPreferredSize() {
-        return new Dimension(this.panelWidth, this.panelHeight);
     }
 
     public int getPanelWidth() {

@@ -1,4 +1,4 @@
-package com.company.general;
+package com.company.panels;
 
 import javax.swing.*;
 import java.awt.*;
