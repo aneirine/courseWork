@@ -1,15 +1,15 @@
-package com.company.general;
+package com.company.panels;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class FiguresPanel extends JPanel {
+public class SettingsPanel extends JPanel {
 
     private int panelWidth;
 
     private int panelHeight;
 
-    public FiguresPanel(int panelWidth, int panelHeight) {
+    public SettingsPanel(int panelWidth, int panelHeight) {
         this.panelWidth = panelWidth;
         this.panelHeight = panelHeight;
     }
@@ -23,12 +23,12 @@ public class FiguresPanel extends JPanel {
         return panelWidth;
     }
 
-    public void setPanelWidth(int panelWidth) {
-        this.panelWidth = panelWidth;
-    }
-
     public int getPanelHeight() {
         return panelHeight;
+    }
+
+    public void setPanelWidth(int panelWidth) {
+        this.panelWidth = panelWidth;
     }
 
     public void setPanelHeight(int panelHeight) {
