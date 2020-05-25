@@ -3,13 +3,13 @@ package com.company.general;
 import javax.swing.*;
 import java.awt.*;
 
-public class FiguresPanel extends JPanel {
+public class ControlsPanel extends JPanel {
 
     private int panelWidth;
 
     private int panelHeight;
 
-    public FiguresPanel(int panelWidth, int panelHeight) {
+    public ControlsPanel(int panelWidth, int panelHeight) {
         this.panelWidth = panelWidth;
         this.panelHeight = panelHeight;
     }
