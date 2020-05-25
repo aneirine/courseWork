@@ -16,7 +16,9 @@ public class ControlsPanel extends JPanel {
     public ControlsPanel(int panelWidth, int panelHeight) {
         this.panelWidth = panelWidth;
         this.panelHeight = panelHeight;
+    }
 
+    public void setParameters(){
         FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 0, 10);
         setLayout(flowLayout);
 
@@ -41,8 +43,6 @@ public class ControlsPanel extends JPanel {
         add(settingsPanel2);
         add(settingsPanel3);
         add(buttonsPanel);
-
-
     }
 
     @Override

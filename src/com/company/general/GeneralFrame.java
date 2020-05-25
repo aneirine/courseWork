@@ -23,6 +23,7 @@ public class GeneralFrame extends JFrame {
 
         FiguresPanel figuresPanel = new FiguresPanel(500, 600);
         ControlsPanel controlsPanel = new ControlsPanel(300, 600);
+        controlsPanel.setParameters();
 
         Border border = new LineBorder(new Color(105, 105, 105), 1);
         figuresPanel.setBorder(border);
