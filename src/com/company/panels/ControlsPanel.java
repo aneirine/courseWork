@@ -28,6 +28,10 @@ public class ControlsPanel extends JPanel {
         settingsPanel2.setBackground(Color.LIGHT_GRAY);
         settingsPanel2.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
 
+        SettingsPanel settingsPanel3 = new SettingsPanel(290, 100);
+        settingsPanel3.setBackground(Color.LIGHT_GRAY);
+        settingsPanel3.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
+
 
         ButtonsPanel buttonsPanel = new ButtonsPanel(290, 100);
         buttonsPanel.setBackground(Color.LIGHT_GRAY);
@@ -35,6 +39,7 @@ public class ControlsPanel extends JPanel {
 
         add(settingsPanel);
         add(settingsPanel2);
+        add(settingsPanel3);
         add(buttonsPanel);
 
 
