@@ -3,8 +3,6 @@ package com.company.panels;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class ControlsPanel extends JPanel {
@@ -23,29 +21,14 @@ public class ControlsPanel extends JPanel {
         setLayout(flowLayout);
 
 
-        //  settingsPanel.setParametersForPanelFirst();
-
-        SettingsPanel settingsPanel2 = new SettingsPanel(290, 100);
-        settingsPanel2.setBackground(Color.LIGHT_GRAY);
-        settingsPanel2.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
-
-        SettingsPanel settingsPanel3 = new SettingsPanel(290, 100);
-        settingsPanel3.setBackground(Color.LIGHT_GRAY);
-        settingsPanel3.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
-
-
         ButtonsPanel buttonsPanel = new ButtonsPanel(290, 100);
         buttonsPanel.setBackground(Color.LIGHT_GRAY);
         buttonsPanel.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             add(setSettingsPanel(i));
         }
 
-        add(setSettingsPanel().setParametersForPanelFirst());
-        add(settingsPanel2);
-        add(settingsPanel3);
-        add(buttonsPanel);
     }
 
     public SettingsPanel setSettingsPanel(int index) {
@@ -62,6 +45,8 @@ public class ControlsPanel extends JPanel {
                 break;
             case 2:
                 settingsPanel.setParametersForPanelThird();
+                break;
+            default:
                 break;
         }
         return settingsPanel;
