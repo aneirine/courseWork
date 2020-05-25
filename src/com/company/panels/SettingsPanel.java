@@ -40,10 +40,13 @@ public class SettingsPanel extends JPanel {
 
         JCheckBox jCheckBox = new JCheckBox();
         jpanel.add(jCheckBox);
+        jCheckBox.setSelected(true);
 
         jpanel.add(new JLabel("кількість"));
         JTextField amount = new JTextField(5);
         jpanel.add(amount);
+        amount.setText("5");
+
         return jpanel;
     }
 

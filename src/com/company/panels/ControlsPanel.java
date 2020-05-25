@@ -20,7 +20,6 @@ public class ControlsPanel extends JPanel {
         FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 0, 10);
         setLayout(flowLayout);
 
-
         ButtonsPanel buttonsPanel = new ButtonsPanel(290, 100);
         buttonsPanel.setBackground(Color.LIGHT_GRAY);
         buttonsPanel.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
