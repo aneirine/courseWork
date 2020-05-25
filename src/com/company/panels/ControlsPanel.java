@@ -18,13 +18,12 @@ public class ControlsPanel extends JPanel {
         this.panelHeight = panelHeight;
     }
 
-    public void setParameters(){
+    public void setParameters() {
         FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 0, 10);
         setLayout(flowLayout);
 
-        SettingsPanel settingsPanel = new SettingsPanel(290, 100);
-        settingsPanel.setBackground(Color.LIGHT_GRAY);
-        settingsPanel.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
+
+        //  settingsPanel.setParametersForPanelFirst();
 
         SettingsPanel settingsPanel2 = new SettingsPanel(290, 100);
         settingsPanel2.setBackground(Color.LIGHT_GRAY);
@@ -39,10 +38,33 @@ public class ControlsPanel extends JPanel {
         buttonsPanel.setBackground(Color.LIGHT_GRAY);
         buttonsPanel.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
 
-        add(settingsPanel);
+        for (int i = 0; i < 2; i++) {
+            add(setSettingsPanel(i));
+        }
+
+        add(setSettingsPanel().setParametersForPanelFirst());
         add(settingsPanel2);
         add(settingsPanel3);
         add(buttonsPanel);
+    }
+
+    public SettingsPanel setSettingsPanel(int index) {
+        SettingsPanel settingsPanel = new SettingsPanel(290, 120);
+        settingsPanel.setBackground(Color.LIGHT_GRAY);
+        settingsPanel.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
+
+        switch (index) {
+            case 0:
+                settingsPanel.setParametersForPanelFirst();
+                break;
+            case 1:
+                settingsPanel.setParametersForPanelSecond();
+                break;
+            case 2:
+                settingsPanel.setParametersForPanelThird();
+                break;
+        }
+        return settingsPanel;
     }
 
     @Override
