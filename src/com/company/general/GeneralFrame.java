@@ -11,6 +11,8 @@ public class GeneralFrame extends JFrame {
         setLocationRelativeTo(null);
         setTitle("Course-project, v1, by Anna Shypilova 2020");
         setLayout(new FlowLayout());
+
+        FiguresPanel figuresPanel = new FiguresPanel(500, 600);
     }
 
     public static void main(String[] args) {
