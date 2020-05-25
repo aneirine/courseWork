@@ -1,6 +1,7 @@
 package com.company.panels;
 
 import javax.swing.*;
+import javax.swing.border.LineBorder;
 import java.awt.*;
 
 public class ControlsPanel extends JPanel {
@@ -16,7 +17,11 @@ public class ControlsPanel extends JPanel {
         FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 0, 10);
         setLayout(flowLayout);
 
-        SettingsPanel settingsPanel = new SettingsPanel();
+        SettingsPanel settingsPanel = new SettingsPanel(290, 100);
+        settingsPanel.setBackground(Color.LIGHT_GRAY);
+        settingsPanel.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
+
+        add(settingsPanel);
 
     }
 
